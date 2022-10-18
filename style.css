@@ -1,0 +1,118 @@
+body, html{
+height:100%;
+margin:0px;
+padding:0px;
+background-color:#ffffff;
+font-family:Calibri, Calibri, sans-serif;
+font-size:14px;
+}
+
+/******************* website areas ********************/
+
+.center{
+        width:800px;
+        margin:0 auto 0 auto;
+        
+}
+
+#header{
+        height:120px;
+        padding-top:20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+}
+
+.menu-link {
+        color:#402626;
+        text-decoration:none;
+}
+
+#image-content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+}
+
+#image-content-2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+}
+
+.image {
+        width: 100%;
+        height: 200px;
+}
+.image2 {
+        width: 95%;
+        height: 420px;
+}
+
+.image3 {
+        width: 300%;
+        height: 720px;
+}
+.menu-active {
+        font-weight: bold;
+}
+
+.menu-link:hover {
+        color:#0a0a0a;
+}
+
+/* .menu-link:active{
+        color:red;
+} */
+
+#menue{
+        height:30px;
+        background-color:#5f42686b;
+        display: flex;
+        align-items: center;
+}
+
+#top-content{
+       font-size:16;
+}
+
+#content{
+        min-height:1070px;
+}
+
+#footer{
+        height:70px;
+        background-color:800080ff;
+}
+
+/******************* menue ********************/
+
+#menue ul{
+        list-style-type:none;
+        font-size:14px;
+        padding:0 0 0 12px;
+}
+
+#menue li{
+        float:left;
+        margin:0 20px 0 0;
+}
+
+
+/******************* blocks ********************/
+
+/* .block{
+        float:left;
+        padding:12px;
+        background-image:url(images/bgblock.png);
+        background-repeat:repeat-x;
+} */
+
+/******************* text ********************/
+
+h1{font-family:Century Schoolbook}
