@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>SLEEC</title>
+    <meta name="description" content="Welcome to SLEECVAL">
+</head>
+
+<body>
+    <div id="header" class="center">
+        <a href="index.html"><img src="images/logo-sleec.png" width="100" height="90"></a>
+        <h2 style="color:purple; font-size:33px;">SLEECVAL: Specification and Validation of Normative Rules</h2>
+    </div>
+    <div id="menue" class="center">
+        <ul>
+            <li><a class="menu-link menu-active" href="index.html">Home</a></li>
+            <li><a class="menu-link" href="download.html">Download</a></li>
+            <li><a class="menu-link" href="documentation.html">Documentation</a></li>
+
+        </ul>
+    </div>
+    <div id="content" class="center" style="padding-top:10px;">
+
+        <div class="block" id="top-content">
+            <h2>About</h2>
+            <p>
+                SLEECVAL enables specification and validation of non-functional rules with the focus on SLEEC (social, legal, ethical, empathetic, and cultural) principles for autonomous agents. To best of our knowledge, our language and tool are novel in their support to formalise and validate normative rules that address SLEEC concerns. Our vision is to provide an automated framework to specify, validate, and verify that agents follow rules, reporting redundancy and conflicts. 
+            </p>
+            <div id="image-content">
+                <div align="center" class="image-text">
+                    <img class="image" src="images/sleec-workflow.png" />
+                    <label class="img-text">SLEECVAL Workflow</label>
+                </div>
+               
+                
+            </div>
+            
+
+            <div class="syntax" id="syntax-content">
+                <h2>SLEEC Language Syntax</h2>
+            <p>
+                SLEEC syntax is composed of defBlock and ruleBock. Definitions are recursively defined in the SLEEC language through events, measures or constants.
+                Every event and measure have an eventID and measureID respectively.  The ruleBlock consist of triggers, responses, and defeaters. A trigger can combine events
+                as well as measures and expressions of them with any logical operation. Responses can be timed, and one can define deadlines and timeouts with
+                responses through within construct. SLEECVAL currently handles
+                seconds, hours and days as time units in the language . In order to handle the situations where the response event
+                cannot happen within a required time unit, we include the otherwise construct
+                to order the events. The concept of defeaters are conducted with unless together with a condition.
+               
+            </p>
+            <div align="center" class="image-text">
+                <img class="image2" src="images/syntax.png" />
+                <label class="img-text">SLEEC Language Syntax</label>
+            </div>
+            </div>
+
+            <div class="semantics" id="semantics-content">
+                <h2>SLEEC Language Semantics into CSP</h2>
+            <p>
+               The tock-CSP processes that define the semantics of the rules are computed through a visitor pattern applied to each element of the SLEEC grammar syntax tree, with each SLEEC rule converted to a tock-CSP process. The computation is based on  translation rules. Each event and measure is modelled in tock-CSP as a channel with measure types directly converted into existing CSP datatypes, or introduced as a new scalar datatype in CSP. 
+               
+            </p>
+            <div align="center" class="image-text">
+            <object data="images/semantics.pdf" 
+                width="800" 
+                height="500"> 
+            </object>                
+            <label class="img-text">SLEEC Language Semantics</label>
+            </div>
+            </div>
+                
+            </div>
+
+            <div id="demo-video">
+                <br />
+                <div align="center">
+                    <iframe width="750" height="315"  src="images/SLEEC Demo.mp4" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <br />
+            </div>
+
+        </div>
+        <div id="footer" class="center"><a href="https://www.google.com.tr/"><img src="images/logo.png" height="40"
+                    style="margin:12px 0 0 12px;"></a> <a href="https://www.google.com.tr/"><img src="images/logo.png"
+                    height="40" style="margin:12px 0 0 12px;"></a> <a href="https://www.google.com.tr/"><img
+                    src="images/logo.png" height="30" style="margin-top:12px; padding-left:12px;"></a></div>
+</body>
+
+</html>
